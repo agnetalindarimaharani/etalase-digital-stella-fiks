@@ -1,0 +1,106 @@
+.form-page {
+  width: min(720px, 92%);
+  margin: 42px auto 60px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.back-link:hover {
+  color: #8c191e;
+}
+
+.form-card {
+  background: #fff;
+  border: 1px solid #f0d7d8;
+  border-radius: 16px;
+  padding: clamp(22px, 5vw, 36px);
+  box-shadow: 0 14px 40px #18264b0d;
+}
+
+.form-card h1 {
+  font-size: clamp(24px, 4vw, 30px);
+}
+
+.form-card .muted {
+  font-size: 13px;
+  margin: 4px 0 20px;
+}
+
+.form-card textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-card label {
+  display: block;
+  margin: 15px 0 7px;
+  color: #18264b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.form-card .form-control {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #dfe4ee;
+  border-radius: 9px;
+  background: #fff;
+  color: #18264b;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-card .form-control:focus {
+  border-color: #af1f24;
+  box-shadow: 0 0 0 3px #af1f241a;
+}
+
+.form-card input[type="file"] {
+  padding: 9px;
+  background: #fffafa;
+}
+
+.form-card input[type="file"]::file-selector-button {
+  margin-right: 12px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #fff0f0;
+  color: #72191d;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-card .btn {
+  margin-top: 22px;
+  min-height: 44px;
+}
+
+.preview {
+  display: block;
+  width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+  background: #fff5f5;
+  border: 1px solid #f0d7d8;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+
+.preview[hidden] {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .form-card {
+    padding: 22px;
+  }
+}

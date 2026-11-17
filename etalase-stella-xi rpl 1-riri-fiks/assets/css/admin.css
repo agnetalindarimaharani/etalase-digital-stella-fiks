@@ -1,0 +1,235 @@
+/* Styling Utama Halaman Admin */
+.admin-wrap {
+    padding-top: 42px;
+    padding-bottom: 60px;
+}
+
+.admin-wrap h1 {
+    font-size: 30px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.stat, 
+.admin-card {
+    background: #fff;
+    border: 1px solid #e7ebf3;
+    border-radius: 14px;
+    padding: 22px;
+}
+
+.stat span {
+    display: block;
+    color: #788396;
+    font-size: 13px;
+}
+
+.stat strong {
+    font-size: 30px;
+    color: #af1f24;
+}
+
+.admin-card {
+    margin: 22px 0;
+}
+
+.admin-card h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.admin-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.admin-form input {
+    flex: 1;
+    min-width: 170px;
+    padding: 11px;
+    border: 1px solid #dfe7ef;
+    border-radius: 8px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, 
+.table td {
+    text-align: left;
+    padding: 13px;
+    border-bottom: 1px solid #f6dada;
+}
+
+.table th {
+    background: #f7f8fc;
+    color: #56627b;
+}
+
+.role-pill {
+    font-size: 11px;
+    padding: 5px 8px;
+    background: #fff0f0;
+    color: #72191d;
+    border-radius: 20px;
+}
+
+.admin-card .btn {
+    font-size: 11px;
+    padding: 7px 10px;
+}
+
+.user-page {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+    padding: 36px 0 60px;
+}
+
+.user-back-link {
+    display: inline-block;
+    margin-bottom: 22px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.user-page-heading {
+    margin-bottom: 24px;
+}
+
+.user-page-heading h1 {
+    font-size: clamp(26px, 4vw, 34px);
+}
+
+.user-page-heading > p:last-child {
+    color: #78839b;
+    font-size: 14px;
+}
+
+.user-card {
+    margin: 18px 0;
+    padding: 24px;
+    border-color: #f0d7d8;
+    box-shadow: 0 8px 25px #18264b08;
+}
+
+.user-card h2 {
+    margin-bottom: 18px;
+}
+
+.user-form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+    align-items: end;
+    gap: 14px;
+}
+
+.user-form label {
+    display: grid;
+    gap: 6px;
+    color: #18264b;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.user-form input {
+    width: 100%;
+    min-width: 0;
+    padding: 11px 12px;
+    border: 1px solid #dfe4ee;
+    border-radius: 8px;
+    background: #fff;
+    color: #18264b;
+    font: inherit;
+    font-size: 13px;
+}
+
+.user-form input:focus {
+    outline: none;
+    border-color: #af1f24;
+    box-shadow: 0 0 0 3px #af1f241a;
+}
+
+.user-form .btn {
+    white-space: nowrap;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    padding: 13px 14px;
+    border-bottom: 1px solid #f1e3e3;
+    text-align: left;
+    font-size: 13px;
+}
+
+.user-table th {
+    background: #fff5f5;
+    color: #72191d;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.user-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.user-table tbody tr:hover {
+    background: #fffafa;
+}
+
+.user-table .role-pill {
+    display: inline-block;
+    background: #fff0f0;
+    color: #72191d;
+    font-weight: 700;
+}
+
+.user-delete-link {
+    font-weight: 700;
+}
+
+/* Responsif untuk Layar Kecil (Mobile) */
+@media (max-width: 650px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .admin-form {
+        flex-direction: column;
+    }
+
+    .user-form {
+        grid-template-columns: 1fr;
+    }
+
+    .user-form .btn {
+        width: 100%;
+    }
+
+    .user-card {
+        padding: 18px;
+    }
+
+    .user-table th,
+    .user-table td {
+        padding: 10px;
+        white-space: nowrap;
+    }
+}
